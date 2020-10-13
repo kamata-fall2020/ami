@@ -1,2 +1,2 @@
 # ami
-Contains all AMI related code
+Contains all AMI related code!
