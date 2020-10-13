@@ -5,7 +5,7 @@
             "access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
             "secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
             "ami_users": "{{env `AMI_USERS`}}",
-            "region": "{{env `AWS_REGION`}}",
+            "region": "us-east-1",
             "type": "amazon-ebs",
             "instance_type": "t2.micro",
             "subnet_id": "{{env `SUBNET_ID`}}",
