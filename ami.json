@@ -4,9 +4,7 @@
         "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
         "prod_ami_users": "{{env `AWS_AMI_USERS`}}",
         "region":"{{env `AWS_REGION`}}",
-        "subnet_id":"{{env `AWS_SUBNET`}}",
-        "source_ami":"{{env `AWS_SOURCE_AMI`}}"
-
+        "subnet_id":"{{env `AWS_SUBNET`}}"
     },
    
     "builders": [
@@ -18,7 +16,7 @@
             "type": "amazon-ebs",
             "instance_type": "t2.micro",
             "subnet_id": "{{user `subnet_id`}}",
-            "source_ami": "{{user `source_ami`}}",
+            "source_ami": "ami-0817d428a6fb68645",
             "ssh_username": "ubuntu",
             "ami_name": "csye6225_{{timestamp}}",
             "ami_description": "Ubuntu AMI for CSYE 6225 - Fall 2020",
