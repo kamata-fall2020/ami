@@ -18,7 +18,7 @@ jobs:
           AWS_AMI_USERS: ${{ secrets.AWS_AMI_USERS }}
           AWS_REGION: ${{secrets.AWS_REGION}}
           AWS_SUBNET: ${{secrets.AWS_SUBNET}}
-          AWS_SOURCE_AMI: ${{secrets.AWS_SOURCE_AMI}}
+          
          
          
 
