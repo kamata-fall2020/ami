@@ -40,10 +40,8 @@
                 "sleep 30",
                 "sudo apt-get update",
                 "sudo apt install -y default-jre",
-                "sudo apt install -y default-jdk"
-
-            
-                           
+                "sudo apt install -y default-jdk",
+                "sudo apt install -y maven"             
             ]
         }
     ]
