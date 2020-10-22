@@ -11,4 +11,4 @@ Steps for building AMI manually without using github actions
 
 1- sudo apt-get update && sudo apt-get install packer
 2- run: packer validate ami.json   
-3- run: packer build ami.json
+3- run: packer build ami.json /
