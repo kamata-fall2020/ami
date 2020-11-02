@@ -4,7 +4,8 @@
         "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
         "prod_ami_users": "{{env `AWS_AMI_USERS`}}",
         "region":"{{env `AWS_REGION`}}",
-        "subnet_id":"{{env `AWS_SUBNET`}}"
+        "subnet_id":"{{env `AWS_SUBNET`}}",
+        "aws_bucket_name":"{{env `AWS_BUCKETNAME_DEV`}}"
     },
    
     "builders": [
@@ -41,7 +42,16 @@
                 "sudo apt-get update",
                 "sudo apt install -y default-jre",
                 "sudo apt install -y default-jdk",
-                "sudo apt install -y maven"             
+                "sudo apt install -y maven",
+                "sudo apt-get install -y ruby",
+                "sudo apt-get install -y wget",
+                "cd /home/ubuntu",
+                "wget https://aws-codedeploy-{{user `region`}}.s3.{{user `region`}}.amazonaws.com/latest/install",
+                "chmod +x ./install",
+                "sudo ./install auto"
+
+
+
             ]
         }
     ]
