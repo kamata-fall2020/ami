@@ -45,6 +45,7 @@
                 "sudo apt install -y maven",
                 "sudo apt-get install -y ruby",
                 "sudo apt-get install -y wget",
+                "sudo yum install -y amazon-cloudwatch-agent",
                 "cd /home/ubuntu",
                 "wget https://aws-codedeploy-{{user `region`}}.s3.{{user `region`}}.amazonaws.com/latest/install",
                 "chmod +x ./install",
